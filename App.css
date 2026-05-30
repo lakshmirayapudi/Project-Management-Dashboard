@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #2563eb;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.task-section {
+  margin-top: 40px;
+}
+
+.task-section h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.add-task {
+  margin-bottom: 25px;
+}
+
+.add-task input {
+  padding: 12px;
+  width: 260px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.add-task button,
+.back-btn {
+  padding: 12px 18px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-task button:hover,
+.back-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.task {
+  background: white;
+  width: 520px;
+  margin: 15px auto;
+  padding: 16px 22px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task span {
+  font-weight: 500;
+}
+
+.completed-btn {
+  background-color: green;
+}
+
+.pending-btn {
+  background-color: red;
+}
+
+.progress-btn {
+  background-color: orange;
+}
+
+.completed-btn,
+.pending-btn,
+.progress-btn {
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.project-card {
+  background: white;
+  width: 230px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+@media (max-width: 600px) {
+  .task {
+    width: 90%;
+  }
+
+  .add-task input {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 85%;
+  }
+}
+.suggestion-list {
+  background: white;
+  width: 300px;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.suggestion-list p {
+  padding: 8px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.suggestion-list p:hover {
+  background-color: #f4f7fc;
+}
